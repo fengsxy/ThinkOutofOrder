@@ -1,0 +1,17 @@
+{
+  "run_name": "test_diffusion_cot_first",
+  "accuracy": 0.7,
+  "mean_retrieval_f1": 0.9588333333333332,
+  "correct": 70,
+  "total": 100,
+  "mode": "diffusion",
+  "prompt_style": "cot_first",
+  "D1_accuracy": 1.0,
+  "D1_count": 27,
+  "D2_accuracy": 0.868421052631579,
+  "D2_count": 38,
+  "D3_accuracy": 0.43478260869565216,
+  "D3_count": 23,
+  "D4_accuracy": 0.0,
+  "D4_count": 12
+}

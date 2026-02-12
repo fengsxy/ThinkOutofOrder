@@ -1,0 +1,19 @@
+# Core dependencies
+torch>=2.0.0
+transformers>=4.40.0
+datasets>=2.18.0
+accelerate>=0.27.0
+
+# For API-based evaluation (Qwen)
+gpt-batch>=0.1.0
+openai>=1.0.0
+
+# Analysis and visualization
+matplotlib>=3.7.0
+numpy>=1.24.0
+pandas>=2.0.0
+seaborn>=0.12.0
+
+# Utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0
