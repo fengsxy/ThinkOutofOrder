@@ -1,8 +1,12 @@
-# Order Robustness in Discrete Diffusion Language Models
+# Thinking Out of Order
 
 This repository contains the code and data for reproducing the experiments in:
 
-**"Order Robustness in Discrete Diffusion Language Models: A Confidence-Based Analysis"**
+**"Thinking Out of Order: When Output Order Stops Reflecting Reasoning Order in Diffusion Language Models"**
+
+Longxuan Yu, Yu Fu, Shaorong Zhang, Hui Liu, Mukund Varma T, Greg Ver Steeg, Yue Dong
+
+[[arXiv]](https://arxiv.org/abs/2601.22035)
 
 ## Key Findings
 
@@ -179,11 +183,11 @@ Key parameters for heatmap:
 ## Citation
 
 ```bibtex
-@inproceedings{author2026order,
-  title={Order Robustness in Discrete Diffusion Language Models: A Confidence-Based Analysis},
-  author={Author Names},
-  booktitle={Proceedings of ICML 2026},
-  year={2026}
+@article{yu2025thinking,
+  title={Thinking Out of Order: When Output Order Stops Reflecting Reasoning Order in Diffusion Language Models},
+  author={Yu, Longxuan and Fu, Yu and Zhang, Shaorong and Liu, Hui and Varma T, Mukund and Ver Steeg, Greg and Dong, Yue},
+  journal={arXiv preprint arXiv:2601.22035},
+  year={2025}
 }
 ```
 
