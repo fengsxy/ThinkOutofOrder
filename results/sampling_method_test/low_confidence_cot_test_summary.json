@@ -1,0 +1,9 @@
+{
+  "run_name": "low_confidence_cot_test",
+  "remasking": "low_confidence",
+  "prompt_style": "cot_first",
+  "accuracy": 0.3,
+  "mean_retrieval_f1": 1.0,
+  "correct": 3,
+  "total": 10
+}

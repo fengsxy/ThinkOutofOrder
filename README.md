@@ -53,14 +53,19 @@ order-robustness-diffusion/
 ├── eval/
 │   ├── run_llada_eval_gsm8k.py
 │   ├── run_llada_eval_reasonorderqa.py
+│   ├── run_llada_sampling_methods.py  # Sampling strategy comparison
 │   ├── run_dream_eval.py
 │   └── run_qwen_eval.py
+├── analysis/
+│   └── plot_confidence_heatmap.py     # D1/D4 confidence heatmap
 ├── scripts/
 │   ├── eval_llada_gsm8k.sh
 │   ├── eval_llada_math500.sh
 │   ├── eval_llada_reasonorderqa.sh
+│   ├── eval_sampling_methods.sh       # All sampling methods
 │   ├── eval_dream.sh
 │   └── eval_qwen_gsm8k.sh
+├── figures/                           # Generated plots
 └── results/
 ```
 
@@ -121,15 +126,47 @@ bash scripts/eval_qwen_gsm8k.sh
 bash scripts/eval_llada_reasonorderqa.sh
 ```
 
-### Confidence Analysis
+### Sampling Methods Comparison
 
-To capture per-step confidence traces:
+Compare different remasking strategies (low_confidence, high_confidence, random, topk_margin, entropy, left_to_right):
+
 ```bash
-python eval/run_llada_eval_gsm8k.py \
-    --model_path GSAI-ML/LLaDA-8B-Instruct \
-    --dataset_path data/gsm8k \
-    --full_trace_jsonl results/gsm8k_trace.jsonl
+# Run all sampling methods
+bash scripts/eval_sampling_methods.sh
+
+# Or run individual method
+python eval/run_llada_sampling_methods.py \
+    --remasking low_confidence \
+    --steps 256 \
+    --gen_length 64 \
+    --block_length 64 \
+    --output_dir results/sampling_method
 ```
+
+### Confidence Heatmap (Figure 3)
+
+Generate confidence trace data and plot heatmap:
+
+```bash
+# Step 1: Run with --save_trace to capture confidence matrices
+python eval/run_llada_sampling_methods.py \
+    --remasking low_confidence \
+    --steps 256 \
+    --gen_length 256 \
+    --block_length 256 \
+    --save_trace \
+    --output_dir results/confidence_trace \
+    --run_name low_confidence_cot
+
+# Step 2: Plot D1/D4 combined heatmap
+python analysis/plot_confidence_heatmap.py \
+    --input results/confidence_trace/low_confidence_cot_trace/trace.jsonl \
+    --output figures/heatmap_d1_d4.png
+```
+
+Key parameters for heatmap:
+- `--save_trace`: Save per-step confidence matrices
+- `--steps 256 --gen_length 256 --block_length 256`: Generate 256x256 matrix for full visualization
 
 ## Models
 

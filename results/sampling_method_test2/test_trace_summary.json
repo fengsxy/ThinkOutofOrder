@@ -1,0 +1,9 @@
+{
+  "run_name": "test_trace",
+  "remasking": "low_confidence",
+  "prompt_style": "cot_first",
+  "accuracy": 0.6,
+  "mean_retrieval_f1": 1.0,
+  "correct": 3,
+  "total": 5
+}

@@ -1,0 +1,10 @@
+{
+  "run_name": "llada_gsm8k_answer_first",
+  "accuracy": 0.61,
+  "correct": 61,
+  "total": 100,
+  "mode": "diffusion",
+  "prompt_style": "answer_first",
+  "steps": 256,
+  "block_length": 256
+}

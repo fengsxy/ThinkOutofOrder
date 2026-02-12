@@ -1,0 +1,9 @@
+{
+  "run_name": "test_high_conf",
+  "remasking": "high_confidence",
+  "prompt_style": "cot_first",
+  "accuracy": 0.6,
+  "mean_retrieval_f1": 1.0,
+  "correct": 12,
+  "total": 20
+}

@@ -1,0 +1,10 @@
+{
+  "run_name": "llada_gsm8k_cot_first",
+  "accuracy": 0.62,
+  "correct": 62,
+  "total": 100,
+  "mode": "diffusion",
+  "prompt_style": "cot_first",
+  "steps": 256,
+  "block_length": 256
+}

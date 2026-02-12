@@ -1,0 +1,5 @@
+{"idx": 0, "difficulty": 2, "gold": "14", "pred": "14", "correct": true, "retrieval_f1": 1.0, "completion": "Retrieval:\n17, 43, 46\n\nReasoning:\nTo find the result of X + Y - Z:\n17 + 43 - 46 = 60 - 46 = 14\n\nAnswer:\n14"}
+{"idx": 1, "difficulty": 4, "gold": "-6695", "pred": "-25", "correct": false, "retrieval_f1": 1.0, "completion": "Retrieval:\n- X = 5\n- Y = 24\n- Z = 56\n- W = 5\n\nReasoning:\n- (X - Y * Z) * W = (-25) * W\n\nAnswer:\n- -25"}
+{"idx": 2, "difficulty": 1, "gold": "30", "pred": "30", "correct": true, "retrieval_f1": 1.0, "completion": "Retrieval:\n15\n10 \n5\n\nReasoning:\nTo obtain the final result, I added the secret key numbers for X, Y, and Z together: 15 + 10 + 5 = 30.\n\nAnswer:\n30"}
+{"idx": 3, "difficulty": 3, "gold": "5264", "pred": "5224", "correct": false, "retrieval_f1": 1.0, "completion": "Retrieval:\n16\n78 \n56\n\nReasoning:\n(X + Y) * Z = (16 + 78) * 56 = 94 * 56 = 5224\n\nAnswer:\n5224"}
+{"idx": 4, "difficulty": 3, "gold": "2280", "pred": "2280", "correct": true, "retrieval_f1": 1.0, "completion": "Retrieval:\nX: 46 Y: 68 Z: 20\n\nReasoning:\n(46 + 68) * 20 = 114 * 20 = 2280\n\nAnswer:\n2280"}

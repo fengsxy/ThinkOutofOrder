@@ -1,0 +1,18 @@
+{
+  "run_name": "dream_gsm8k_answer_first",
+  "model_path": "Dream-org/Dream-v0-Instruct-7B",
+  "dataset_type": "gsm8k",
+  "dataset_path": "data/gsm8k",
+  "split": "test",
+  "num_examples": 100,
+  "num_correct": 31,
+  "accuracy": 0.31,
+  "ar_mode": false,
+  "answer_first": true,
+  "max_new_tokens": 256,
+  "steps": 256,
+  "temperature": 0.1,
+  "top_p": 0.95,
+  "alg": "maskgit_plus",
+  "alg_temp": 0.0
+}
